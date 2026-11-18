@@ -1,6 +1,6 @@
 # Store Labour Planner
 
-**Live app:** https://store-labour-planner.streamlit.app *(planned address; confirmed at launch)*
+**Live app:** https://store-labour-planner.streamlit.app
 
 How many staff should a high-street shop have on the floor each hour? This one-page Streamlit app forecasts real
 hourly city-centre footfall in Leeds, turns it into an hour-by-hour staffing plan, and shows what covering the peaks costs.
