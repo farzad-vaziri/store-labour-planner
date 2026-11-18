@@ -1,0 +1,153 @@
+{
+  "data_start": "2023-10-30 00:00:00",
+  "data_end": "2026-10-25 23:00:00",
+  "sites": [
+    "Albion Street at Bond Street",
+    "Albion Street at McDonalds",
+    "Briggate M&S",
+    "Briggate at Swan Street",
+    "Commercial Street at Sharps",
+    "Headrow at Broadgate",
+    "Headrow at Lands Lane",
+    "Park Row"
+  ],
+  "n_rows": 209664,
+  "forecast_start": "2026-10-26 00:00:00",
+  "forecast_end": "2026-11-08 23:00:00",
+  "backtest_origins": [
+    "2026-08-31",
+    "2026-09-07",
+    "2026-09-14",
+    "2026-09-21",
+    "2026-09-28",
+    "2026-10-05",
+    "2026-10-12",
+    "2026-10-19"
+  ],
+  "methods": {
+    "seasonal_naive": "Seasonal naive",
+    "regression": "Regression (hour x weekday, holidays, weather)",
+    "lightgbm": "LightGBM (calendar + weather)"
+  },
+  "best_method": "lightgbm",
+  "models": {
+    "seasonal_naive": {
+      "mae": 147.50855654761904,
+      "wape": 0.13427122684198664,
+      "wape_trading": 0.11394184291032425
+    },
+    "regression": {
+      "mae": 178.65724214926445,
+      "wape": 0.16262464801384993,
+      "wape_trading": 0.14724194262511295
+    },
+    "lightgbm": {
+      "mae": 141.11308528131852,
+      "wape": 0.1284496813448505,
+      "wape_trading": 0.1077493285228418
+    },
+    "lightgbm_no_weather": {
+      "mae": 157.77649533973968,
+      "wape": 0.14361772694356814,
+      "wape_trading": 0.12011431681538372
+    }
+  },
+  "wape_by_hour": {
+    "seasonal_naive": [
+      0.2742,
+      0.3315,
+      0.4133,
+      0.4345,
+      0.3823,
+      0.2509,
+      0.1724,
+      0.1286,
+      0.1328,
+      0.1337,
+      0.1119,
+      0.107,
+      0.1029,
+      0.111,
+      0.1186,
+      0.1254,
+      0.117,
+      0.1085,
+      0.1319,
+      0.1418,
+      0.1633,
+      0.1914,
+      0.2298,
+      0.248
+    ],
+    "regression": [
+      0.2378,
+      0.2847,
+      0.3255,
+      0.3571,
+      0.2904,
+      0.2343,
+      0.2039,
+      0.1434,
+      0.1273,
+      0.1607,
+      0.1511,
+      0.1487,
+      0.1437,
+      0.1594,
+      0.1503,
+      0.1383,
+      0.1443,
+      0.1395,
+      0.1625,
+      0.1911,
+      0.2235,
+      0.2256,
+      0.2151,
+      0.2315
+    ],
+    "lightgbm": [
+      0.1987,
+      0.238,
+      0.2669,
+      0.2982,
+      0.277,
+      0.2157,
+      0.1506,
+      0.1133,
+      0.1202,
+      0.1233,
+      0.1194,
+      0.1067,
+      0.1068,
+      0.1175,
+      0.1083,
+      0.0995,
+      0.1008,
+      0.1036,
+      0.1417,
+      0.1799,
+      0.2133,
+      0.1987,
+      0.1992,
+      0.2029
+    ]
+  },
+  "interval_coverage_80": 0.8062686011904762,
+  "interval_coverage_80_trading": 0.8199404761904762,
+  "mean_rel_interval_width_trading_by_day_type": {
+    "holiday period": 0.3880000114440918,
+    "normal": 0.3799999952316284,
+    "special": 0.7329999804496765
+  },
+  "weekly_forecast_footfall": {
+    "Albion Street at Bond Street": 259387.77298599028,
+    "Albion Street at McDonalds": 137100.42617239087,
+    "Briggate M&S": 307497.8562993823,
+    "Briggate at Swan Street": 274048.67100807134,
+    "Commercial Street at Sharps": 193171.56392099973,
+    "Headrow at Broadgate": 129009.45869525628,
+    "Headrow at Lands Lane": 171389.84171010973,
+    "Park Row": 145208.9206364468
+  },
+  "fit_seconds": 621
+}

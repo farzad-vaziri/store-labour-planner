@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+raw/
+rawdata/
+*.log
+.DS_Store
+.streamlit/secrets.toml
+_to_delete/
